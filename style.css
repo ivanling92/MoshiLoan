@@ -349,7 +349,6 @@ a.single-about {
   color: #cbe5ff;
   display: block;
   padding: 50px 25px;
-  background: #1938a2;
   text-align: center;
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -357,7 +356,6 @@ a.single-about {
 }
 
 a.single-about:hover {
-  background: #122e91;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);

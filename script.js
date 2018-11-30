@@ -18,10 +18,10 @@ $(document).ready(function () {
 
     // Set default amount. In case of mosaic transfer the XEM amount works as a multiplier. (2 XEM will multiply by 2 the quantity of the mosaics you send)
     $("#amount").val("1");
-    $("#recipient").val("TAQLC2WUNAYC5WLTXJR52KT5I6M67VLSEQITFVMV");
-    $("#namespaceId").val("lul_enterprise");
-    $("#mosaicName").val("coconut");
-    $("#privateKey").val("ABC");
+    $("#recipient").val("TBS6O3O6HDRODQX62YUHKBUR7G7YO36AZXPLBBHQ"); //TAQLC2WUNAYC5WLTXJR52KT5I6M67VLSEQITFVMV
+    $("#namespaceId").val("moshi");
+    $("#mosaicName").val("agro");
+    $("#privateKey").val("2ed8463c4a1b899f1cad9fad145de8a1aec1300601091512c09f750ba5758e13");
 	//2ed8463c4a1b899f1cad9fad145de8a1aec1300601091512c09f750ba5758e13
     mosaicAmount = 5;
 	var hidebutt = document.getElementById("payment");
@@ -86,14 +86,14 @@ $(document).ready(function () {
 
 
         if (mosaicAmount == 5) {
-            transactionEntity.fee = 300000;
+            transactionEntity.fee = 400000;
         }
 
         else if (mosaicAmount == 10) {
-            transactionEntity.fee = 300000;
+            transactionEntity.fee = 400000;
         }
         else {
-            transactionEntity.fee = 300000;
+            transactionEntity.fee = 400000;
         }
         console.log("GG", mosaicAmount);
 
@@ -190,9 +190,9 @@ $(document).ready(function () {
 
     // Call send function when click on send button
     $("#send").click(function () {
-        alert("NEM Transaction disabled until final version is released");
-		alert("The next page will be a simulated certificated issuance");
-		//send();
+        //alert("NEM Transaction disabled until final version is released");
+		//alert("The next page will be a simulated certificated issuance");
+		send();
 		myFunctionButt();
     });
 
