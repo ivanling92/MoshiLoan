@@ -1,0 +1,69 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://static.squarespace.com/universal/default-favicon.ico">
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Payment Gateway</h1>
+		<p>Please pay within 30 minutes to avoid cancellation</p>
+    </div>
+    <div id="transfer" style="width: 850px;margin: auto;border: 1px solid #444;padding: 20px;overflow: auto;">
+        <div class="col-md-6">
+            <div class="form-group">
+                <fieldset>
+                    <label>I agree to pay to:</label>
+                    <input class="form-control" type="text" id="recipient" readOnly/>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label>Amount</label>
+                    <input class="form-control" type="text" id="amount" readOnly/>
+					<label>XEM</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label>Notes:</label>
+                    <textarea class="form-control" type="text" id="amount" id="message"></textarea>
+                </fieldset>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <fieldset>
+                    <label>Fee</label>
+                    <p class="form-control-static" type="text">
+                        <span id="fee">
+                        </span> <small><b>XEM</b></small>
+                    </p>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label>Enter your Private key to pay:</label>
+                    <input class="form-control" type="password" id="privateKey" />
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <!--<button class="btn btn-success" style="width:100%;" id="send">Send</button>-->
+                </fieldset>
+            </div>
+        </div>
+		<div id="Continue">
+			<button id="ContinueButt" class="btn btn-success" onclick="location.href='certificate.pdf'">Claim your token!</button>
+		</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="nem-sdk.js"></script>
+    <script src="transactscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://static.squarespace.com/universal/default-favicon.ico">
+
+</head>
+
+<body>
+	<div id="payment" visibility="hidden" width= "100%" height="100%">
+		<Button class="btn btn-success" id = "paymentbutt" onclick="location.href='transact.html'" width= "100%" height="100%">Go to Payment Page</button>
+	</div>
+    <div class="col-md-12">
+        <div id="transfer" class="col-md-8" style="border: 1px solid #444;padding: 20px;overflow: auto;">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <fieldset>
+                        <label>Your NEM Address:</label>
+                        <input class="form-control" type="text" id="recipient" />
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label>XEM for verification:</label>
+                        <input class="form-control" type="text" id="amount" readOnly />
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label>Your Name (Follow NRIC):</label>
+                        <textarea class="form-control" rows="5" cols="25" id="message"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <fieldset>
+                        <label>Amount of tokens to purchase:</label>
+                        <br />
+                        <input type="checkbox" id="myCheck" onclick="myFunction()" checked="checked" />5
+                        <br />
+                        <input type="checkbox" id="myCheck1" onclick="myFunction1()" />10
+                        <br />
+                        <input type="checkbox" id="myCheck2" onclick="myFunction2()" />20
+                        <p id="text" style="display:none">Checkbox is CHECKED!</p>
+                    </fieldset>
+                </div>
+
+
+                <div class="form-group">
+                    <fieldset>
+                        <label>Namespace id:</label>
+                        <input class="form-control" type="text" id="namespaceId" placeholder="nem" readonly/>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label>Name of property to purchase (Verify before pressing add)</label>
+                        <input class="form-control" type="text" id="mosaicName" placeholder="xem" readonly/>
+                    </fieldset>
+                </div>
+                <!--<div class="form-group">
+                    <fieldset>
+                        <label>Amount of mosaic</label>
+                        <input  class="form-control" type="text" id="mosaicAmount" />
+                    </fieldset>
+                </div>-->
+                <div class="form-group">
+                    <fieldset>
+                        <button class="btn btn-success" style="width:100%;" id="attachMosaic">Add to cart</button>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <fieldset>
+                        <label></label>
+                        <input class="form-control" type="password" id="privateKey" style="visibility:hidden;" readonly/>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <button class="btn btn-success" style="width:100%;" id="send">Submit and proceed to payment</button>
+                    </fieldset>
+                </div>
+            </div>
+			
+        </div>
+
+        <div id="mosaicAttached" class="col-md-3" style="margin-left: 20px;border: 1px solid #444;padding: 20px;overflow: auto;">
+            <label>Shopping Cart</label>
+            <ul id="mosaicList"></ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="nem-sdk.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
