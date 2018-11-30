@@ -65,6 +65,8 @@ body{
 	font-size: 14px;
 	color: #cbe5ff;
 	overflow-x: hidden;
+	overflow: scroll;
+	webkit-overflow-scrolling: touch;
 }
 
 h1,
