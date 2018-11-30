@@ -64,7 +64,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	color: #cbe5ff;
-	overflow: scroll;
+	overflow-x: hidden;
 }
 
 h1,
@@ -452,7 +452,7 @@ ico area css
 .ico-area {
   position: relative;
   z-index: 2;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .ico-area:before {
@@ -564,7 +564,7 @@ roadmap area css
 
 .roadmap-area{
 	background: #031b69;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .single-roadmap-img img {
@@ -832,7 +832,7 @@ distibution area css
 .distibution-bg {
   position: relative;
   z-index: 2;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .distibution-bg:before {
